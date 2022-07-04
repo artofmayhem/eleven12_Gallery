@@ -11,9 +11,10 @@ function App() {
   const [user, setUser] = useState(initialStates);
   console.log("1. User: ", user);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setUser({ ...user, [name]: value });
+  const handleChange= (event) => {
+    const { name, value} = event.target;
+    setUser({...user, [name]: value});
+    console.log("2. User: ", user);
   }
 
 
