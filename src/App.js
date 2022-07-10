@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const initialStates = {
   userName: "John",
-  password: "XTC93"
+  password: "Wick"
 }
 
 function App() {
