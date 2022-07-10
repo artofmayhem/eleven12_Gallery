@@ -29,14 +29,14 @@ function App() {
 
   return (
     <div className="App bg-zinc-600 text-white">
-     <h1>ELEVN12</h1>
-      <h2>Login</h2>
-      <form>
+     <h1 className="text-6xl">ELEVN12</h1>
+      <h2 className='my-10' >Please login via the guest portal below</h2>
+      <form className="form-container my-2">
         <label>User Name:</label>
-        <input className="text-black" type="text" name="userName" value={user.userName} onChange={handleChange} />
+        <input className="text-black w-36 mx-10 my-10 text-center" type="text" name="userName" value={user.userName} onChange={handleChange} />
         <label>Password:</label>
-        <input className="text-black" type="password" name="password" value={user.password} onChange={handleChange} />
-        <button  onClick={handleSubmit}>Login</button>
+        <input className="text-black w-36 mx-10 my-10 text-center" type="password" name="password" value={user.password} onChange={handleChange} />
+        <button className="border-2 px-16 py-2" onClick={handleSubmit}>Login</button>
       </form>
      </div>
   );
