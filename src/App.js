@@ -17,6 +17,12 @@ function App() {
     console.log("2. User: ", user);
   }
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("3. User: ", user);
+  }
+  
+
 
 
   return (
