@@ -19,7 +19,8 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("3. User: ", user);
+    console.log("3. User: ", user.userName);
+    console.log("4. User: ", user.password);
   }
   
 
@@ -34,7 +35,7 @@ function App() {
         <input className="text-black" type="text" name="userName" value={user.userName} onChange={handleChange} />
         <label>Password:</label>
         <input className="text-black" type="password" name="password" value={user.password} onChange={handleChange} />
-        <button>Login</button>
+        <button  onClick={handleSubmit}>Login</button>
       </form>
      </div>
   );
