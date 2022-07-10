@@ -21,6 +21,7 @@ function App() {
     event.preventDefault();
     console.log("3. User: ", user.userName);
     console.log("4. User: ", user.password);
+    console.log("Hello " + user.userName + " your password is " + user.password);
   }
   
 
