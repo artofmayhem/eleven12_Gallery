@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App bg-zinc-600 text-white">
-     <h1 className="text-6xl">ELEVN12</h1>
+     <h1 className="text-9xl">ELEVN12</h1>
       <h2 className="my-10">Please login via the guest portal below</h2>
       <form className="form-container my-2">
         <label>User Name:</label>
