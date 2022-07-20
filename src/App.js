@@ -25,8 +25,6 @@ function App() {
   }
   
 
-
-
   return (
     <div className="App bg-zinc-600 text-white">
      <h1 className="text-9xl">ELEVN12</h1>
