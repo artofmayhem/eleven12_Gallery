@@ -1,5 +1,5 @@
 const initialSearchValue = {
-    value: "",
+  value: "",
 };
 
 export default initialSearchValue;
