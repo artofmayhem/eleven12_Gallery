@@ -1,6 +1,9 @@
-// import Nav from "Nav.js"
+import Nav_Section from "./Nav";
+import Header_Section from "./Header";
+import Form_Section from "./Form";
 
-// export default {
-//     Nav as NavBar,
-
-// }
+export {
+    Nav_Section as Nav,
+    Header_Section as Header,
+    Form_Section as Form
+}

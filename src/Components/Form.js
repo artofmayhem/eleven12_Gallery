@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import uuid from "react-uuid";
-
-// This can be refactored later and imported into the App.js file
-const initialStates = {
-    userName: "",
-    password: "",
-  };
+import initialStates from "../State/initialFormState";
 
 
 export default function Form() {
@@ -14,7 +9,7 @@ export default function Form() {
     console.log("1. User: ", user);
   
   
-  // This helper function is user to place 
+  // This helper function is used to give the user a unique id and make a shallow copy of the user object
     const doAThing = (user, password) => {
       console.log("Hello " + user + " your password is " + password);
       let data = {
@@ -24,10 +19,9 @@ export default function Form() {
       }; 
       let shallowCopyData = {...data};
       console.log("Shallow copy: ", shallowCopyData);
-      let copySlicer = shallowCopyData["id"];
-      console.log("Copy Slicer: ", copySlicer);
+        setUser(shallowCopyData);
        // eslint-disable-next-line
-      console.log("Welcome " + data.userName + ". " + "Your user ID is : " + data.id + ". Your password is: " + data.password); 
+      console.log("Welcome " + data.userName + " and thank you for registering. Your user ID is : " + data.id + ". Your password is: " + data.password); 
       console.log({data});
       return data
     }
