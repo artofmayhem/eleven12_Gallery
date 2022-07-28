@@ -30,3 +30,23 @@
   background-color: #555;
   opacity: 0.8;
 }
+
+.Nav-Wrapper {
+  width: 100vw;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Nav-Content {
+  width: 50%;
+  height: 100%;
+  /* display: flex;
+  align-items: space-evenly;
+  flex-flow: row wrap; */
+  text-decoration: none;
+
+}

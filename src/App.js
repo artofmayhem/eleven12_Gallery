@@ -2,6 +2,9 @@ import "./App.css";
 import { useState } from "react";
 import uuid from "react-uuid";
 
+// Dashboard component imports
+import Nav from "./Components/Nav.js";
+
 // This can be refactored later and imported into the App.js file
 const initialStates = {
   userName: "",
@@ -46,6 +49,7 @@ function App() {
 
   return (
     <div className="App bg-zinc-600 text-white">
+      <Nav />
       <h1 className="text-9xl">ELEVN12</h1>
       <h2 className="my-10">Please login via the guest portal below</h2>
       <form className="form-container my-2">
