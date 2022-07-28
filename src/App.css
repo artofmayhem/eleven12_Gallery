@@ -1,20 +1,17 @@
 .App {
   display: flex;
+  overflow-x: hidden;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
   height: auto;
   min-height: 100vh;
-  color: white;
+  color: #ffffff;
   width: 100vw;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  background-image: url("./assets/architecture-003.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+
 }
 
 .form-container {
@@ -23,7 +20,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  width: 60%;
+  width: 50%;
   max-width: 375px;
   padding: 2rem;
   border: 1px solid white;
@@ -34,7 +31,6 @@
 .Nav-Wrapper {
   width: 100vw;
   height: 3rem;
-  background-color: black;
   color: white;
   display: flex;
   align-items: center;
@@ -48,5 +44,24 @@
   align-items: space-evenly;
   flex-flow: row wrap; */
   text-decoration: none;
+}
 
+.Header-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  width: 100vw;
+  color: white;
+  background-image: url("./assets/architecture-004.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.title-padding {
+  padding: 17.5vh 50vw;
+  opacity: 0.6;
 }

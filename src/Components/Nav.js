@@ -1,8 +1,7 @@
- 
- 
+
  function Nav () {
     return (
-        <div className="Nav-Wrapper">
+        <div className="Nav-Wrapper bg-violet-800">
             <div className="Nav-Content flex justify-center align-center">ELEVN12</div>
             <div className="Nav-Content flex flex-row justify-center align-center">
                 <ul className="flex flex-row justify-end">
