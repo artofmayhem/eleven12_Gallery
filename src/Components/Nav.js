@@ -21,7 +21,7 @@ function Nav() {
   };
 
   return (
-    <div className="Nav-Wrapper bg-violet-800 py-4 ">
+    <div className="Nav-Wrapper bg-violet-800 ">
       <div className="Nav-Content flex justify-between px-10 my-4 flex-row align-center">
         <div>
           <SearchIcon className="text-white mr-2" />
@@ -36,7 +36,7 @@ function Nav() {
           <h1 className="text-5xl">ELEVN12</h1>
         </div>
         <div>
-          <button className="py-2 px-6 bg-gray-400 text-xl">Sign Up Now</button>
+          <button className="py-2 px-6 bg-gray-400 text-xl">Resident Portal</button>
           <LoginIcon className="text-white ml-6" />
         </div>
       </div>
