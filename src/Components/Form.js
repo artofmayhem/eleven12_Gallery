@@ -44,29 +44,34 @@ export default function Form() {
   };
 
   return (
-    <div className="flex justify-center align-center flex-column form-container bg-violet-800 my-10">
-      <h2 className="my-10">Please login via the guest portal below</h2>
-      <form className=" my-2">
-        <label>User Name:</label>
-        <input
-          className="text-black w-36 mx-10 my-10 text-center"
-          type="text"
-          name="userName"
-          value={user.userName}
-          onChange={handleChange}
-        />
-        <label>Password:</label>
-        <input
-          className="text-black w-36 mx-10 my-10 text-center"
-          type="password"
-          name="password"
-          value={user.password}
-          onChange={handleChange}
-        />
-        <button className="border-2 px-16 py-2" onClick={handleSubmit}>
-          Login
-        </button>
-      </form>
+    <div className="flex justify-center align-center flex-row  bg-violet-800">
+      <div className="form-content-block-bk flex flex-row flex-wrap justify-center align-center text-white mx-auto">
+        <h2 className="self-center">text test</h2>
+      </div>
+      <div className="form-content-block-wt">
+        <h2 className="my-10">Please login via the guest portal below</h2>
+        <form className=" my-36 border-2 mx-6 py-10">
+          <label>User Name:</label>
+          <input
+            className="text-black w-36 mx-10 my-10 text-center"
+            type="text"
+            name="userName"
+            value={user.userName}
+            onChange={handleChange}
+          />
+          <label>Password:</label>
+          <input
+            className="text-black w-36 mx-10 my-10 text-center"
+            type="password"
+            name="password"
+            value={user.password}
+            onChange={handleChange}
+          />
+          <button className="border-2 px-16 py-2" onClick={handleSubmit}>
+            Login
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
