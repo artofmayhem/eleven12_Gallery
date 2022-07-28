@@ -3,8 +3,8 @@
  function Nav () {
     return (
         <div className="Nav-Wrapper">
-            <div className="Nav-Content flex">ELEVN12</div>
-            <div className="Nav-Content flex flex-row">
+            <div className="Nav-Content flex justify-center align-center">ELEVN12</div>
+            <div className="Nav-Content flex flex-row justify-center align-center">
                 <ul className="flex flex-row justify-end">
                     <a href="https://www.yahoo.com" className="px-4">Home</a>
                     <a href="https://www.yahoo.com" className="px-4">About</a>
