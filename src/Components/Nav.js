@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+//State Value Imports
+import initialSearchValue  from "../State/initialSearchValue"
+
 // Material UI Icons
 import SearchIcon from "@mui/icons-material/Search";
 import LoginIcon from "@mui/icons-material/Login";
@@ -8,13 +11,12 @@ import InfoIcon from '@mui/icons-material/Info';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import AttributionIcon from '@mui/icons-material/Attribution';
 
-const initialSearchValue = {
-    value: "",
-};
+
 
 function Nav() {
   const [searchValue, setSearchValue] = useState(initialSearchValue);
 
+  //Handle Changes
   const handleSearchChange = (event) => {
     setSearchValue(event.target.value);
     console.log("Search value: ", searchValue);
@@ -27,6 +29,7 @@ function Nav() {
           <SearchIcon className="text-white mr-2" />
           <input
             className="bg-violet-800 w-48 text-xl"
+            placeholder="Search"
             value={searchValue.value}
             onChange={handleSearchChange}
           />
