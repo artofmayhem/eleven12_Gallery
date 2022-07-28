@@ -6,6 +6,16 @@ const initialStates = {
   password: "Wick"
 }
 
+const doAThing = (user, password) => {
+  console.log("Hello " + user + " your password is " + password);
+  let data = {
+    userName: user,
+    password: password
+  }
+  console.log("5. Data USER: ", data.password + " " + data.userName, {data});
+  return data;
+} 
+
 function App() {
 
   const [user, setUser] = useState(initialStates);
@@ -19,9 +29,10 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("3. User: ", user.userName);
-    console.log("4. Password: ", user.password);
-    console.log("Hello " + user.userName + " your password is " + user.password);
+    // console.log("3. User: ", user.userName);
+    // console.log("4. Password: ", user.password);
+    // console.log("Hello " + user.userName + " your password is " + user.password);
+    doAThing(user.userName, user.password);
   }
   
 
