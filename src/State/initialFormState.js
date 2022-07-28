@@ -1,7 +1,7 @@
 const initialStates = {
-    id: null,
-    userName: "",
-    password: "",
-  };
+  id: null,
+  userName: "",
+  password: "",
+};
 
-  export default initialStates
+export default initialStates;
