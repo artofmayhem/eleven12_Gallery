@@ -20,6 +20,8 @@
   height: auto;
   background-color: black;
   color: white;
+  background-image: url("./assets/architecture-002.jpg");
+  background-size: cover;
 }
 
 .form-content-block-wt {
@@ -80,3 +82,32 @@
   padding: 25vh 50vw;
   opacity: 0.55;
 }
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 12.5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.nav-hover {
+  scale: 2;
+  transition: 1.5s ease;
+}
+
+.nav-hover:hover {
+  scale: 1.2;
+  transition: 1.5s ease;
+}
+

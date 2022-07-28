@@ -44,10 +44,8 @@ export default function Form() {
   };
 
   return (
-    <div className="flex justify-center align-center flex-row  bg-violet-800">
-      <div className="form-content-block-bk flex flex-row flex-wrap justify-center align-center text-white mx-auto">
-        <h2 className="self-center">text test</h2>
-      </div>
+    <div className="flex justify-center align-center flex-row  bg-violet-800 h-auto">
+      <div className="form-content-block-bk flex flex-row flex-wrap justify-center align-center text-white mx-auto" />
       <div className="form-content-block-wt">
         <h2 className="my-10">Please login via the guest portal below</h2>
         <form className=" my-36 border-2 mx-6 py-10">

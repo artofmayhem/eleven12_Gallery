@@ -3,6 +3,10 @@ import { useState } from "react";
 // Material UI Icons
 import SearchIcon from "@mui/icons-material/Search";
 import LoginIcon from "@mui/icons-material/Login";
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import AttributionIcon from '@mui/icons-material/Attribution';
 
 const initialSearchValue = {
     value: "",
@@ -22,7 +26,7 @@ function Nav() {
         <div>
           <SearchIcon className="text-white mr-2" />
           <input
-            className="bg-violet-800 border-2 border-white w-48 text-xl"
+            className="bg-violet-800 w-48 text-xl"
             value={searchValue.value}
             onChange={handleSearchChange}
           />
@@ -36,18 +40,18 @@ function Nav() {
         </div>
       </div>
       <div className="Nav-Content-Links flex flex-row justify-center align-center my-6">
-        <ul className="flex flex-row justify-center align-center text-xl">
+        <ul className="flex flex-row justify-center align-center text-2xl">
           <a href="https://www.yahoo.com" className="px-4">
-            Home
+           <HomeIcon className="text-white mr-10 nav-hover" />
           </a>
           <a href="https://www.yahoo.com" className="px-4">
-            About
+            <InfoIcon className="text-white mr-10 nav-hover" />
           </a>
           <a href="https://www.yahoo.com" className="px-4">
-            Contact
+            <SupportAgentIcon className="text-white mr-10 nav-hover" />
           </a>
           <a href="https://www.yahoo.com" className="px-4">
-            Login
+            <AttributionIcon className="text-white mr-10 nav-hover" />
           </a>
         </ul>
       </div>
