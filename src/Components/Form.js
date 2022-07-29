@@ -46,26 +46,42 @@ export default function Form() {
   return (
     <div className="flex justify-center align-center flex-row  bg-violet-800 h-auto">
       <div className="form-content-block-bk flex flex-row flex-wrap justify-center align-center text-white mx-auto" />
-      <div className="form-content-block-wt">
-        <h2 className="my-10">Please login via the guest portal below</h2>
-        <form className=" my-36 border-2 mx-6 py-10">
-          <label>User Name:</label>
+      <div className="form-content-block-wt flex flex-col justify-center align-center bg-slate-300">
+        <div className="w-1/2 text-xl text-justify self-center mt-16">
+          <h4 className="mb-6 text-3xl text-bold">Welcome Home</h4>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
+
+        <h2 className="mt-16">Please login via the guest portal below</h2>
+        <form className=" my-16 w-96 self-center border-2 border-slate-900 mx-6 py-10 text-xl flex flex-col justify-center align-center bg-slate-500">
+          <label className="text-white">User Name:</label>
           <input
-            className="text-black w-36 mx-10 my-10 text-center"
+            className="text-black w-36 mx-10 my-4 text-center self-center"
             type="text"
             name="userName"
             value={user.userName}
             onChange={handleChange}
           />
-          <label>Password:</label>
+          <label className="text-white">Password:</label>
           <input
-            className="text-black w-36 mx-10 my-10 text-center"
+            className="text-black w-36 mx-10 my-4 text-center self-center"
             type="password"
             name="password"
             value={user.password}
             onChange={handleChange}
           />
-          <button className="border-2 px-16 py-2" onClick={handleSubmit}>
+          <button
+            className="border-2 px-4 w-36 self-center py-2 bg-gray-400 text-sm"
+            onClick={handleSubmit}
+          >
             Login
           </button>
         </form>

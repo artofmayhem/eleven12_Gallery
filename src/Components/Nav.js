@@ -14,12 +14,20 @@ import { Switch } from "@mui/material";
 
 function Nav() {
   const [searchValue, setSearchValue] = useState(initialSearchValue);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   //Handle Changes
   const handleSearchChange = (event) => {
     setSearchValue(event.target.value);
     console.log("Search value: ", searchValue);
   };
+
+  // Handle Dark Mode Switch
+  const handleDarkModeSwitch = (event) => {
+    setIsDarkMode(event.target.checked);
+    console.log("Dark Mode: ", isDarkMode);
+  }
+
 
   return (
     <div className="Nav-Wrapper bg-violet-800 animate-fade-in-down">
@@ -34,7 +42,8 @@ function Nav() {
           />
         </div>
         <div>
-          <h1 className="text-5xl">ELEVN12</h1>
+        <div className="logo-dot-sm self-start" />
+          <h1 className="text-3xl logo-name-location">ELEVN12</h1>
         </div>
         <div className="flex flex-col justify-end align-center ">
           <div>
@@ -45,7 +54,7 @@ function Nav() {
           </div>
           <div className="flex self-end justify-center align-center">
             <p className='text-xs text-slate-300 mt-3'>Dark Mode</p>
-           <Switch></Switch>
+           <Switch onChange={handleDarkModeSwitch}></Switch>
            </div>
         </div>
        
