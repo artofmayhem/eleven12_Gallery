@@ -35,7 +35,7 @@ function Nav() {
         <div>
           <SearchIcon className="text-white mr-2" />
           <input
-            className="bg-violet-800 w-48 text-xl"
+            className="bg-violet-800 w-48 text-xl text-center"
             placeholder="Search"
             value={searchValue.value}
             onChange={handleSearchChange}
