@@ -70,7 +70,7 @@ module.exports = {
             transform: "translateX(100px)",
           },
           to: {
-            opacity: "1",
+            opacity: "0.9",
             transform: "translateX(0px)",
           },
         }, 

@@ -1,15 +1,18 @@
 import "./App.css";
+import { BrowserRouter as Router} from "react-router-dom";
 
 // Dashboard component imports
 import { Nav, Header, Form } from "./Components";
 
 function App() {
   return (
-    <div className="App bg-violet-800 text-white">
-      <Nav />
-      <Header />
-      <Form />
-    </div>
+    <Router>
+      <div className="App bg-violet-800 text-white">
+        <Nav />
+        <Header />
+        <Form />
+      </div>
+    </Router>
   );
 }
 

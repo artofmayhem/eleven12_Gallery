@@ -10,6 +10,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import AttributionIcon from "@mui/icons-material/Attribution";
+import { Switch } from "@mui/material";
 
 function Nav() {
   const [searchValue, setSearchValue] = useState(initialSearchValue);
@@ -21,7 +22,7 @@ function Nav() {
   };
 
   return (
-    <div className="Nav-Wrapper bg-violet-800 ">
+    <div className="Nav-Wrapper bg-violet-800 animate-fade-in-down">
       <div className="Nav-Content flex justify-between px-10 my-4 flex-row align-center">
         <div>
           <SearchIcon className="text-white mr-2" />
@@ -35,10 +36,19 @@ function Nav() {
         <div>
           <h1 className="text-5xl">ELEVN12</h1>
         </div>
-        <div>
-          <button className="py-2 px-6 bg-gray-400 text-xl">Resident Portal</button>
-          <LoginIcon className="text-white ml-6" />
+        <div className="flex flex-col justify-end align-center ">
+          <div>
+            <button className="py-2 px-6 bg-gray-400 text-xl">
+              Resident Portal
+            </button>
+            <LoginIcon className="text-white ml-6" />
+          </div>
+          <div className="flex self-end justify-center align-center">
+            <p className='text-xs text-slate-300 mt-3'>Dark Mode</p>
+           <Switch></Switch>
+           </div>
         </div>
+       
       </div>
       <div className="Nav-Content-Links flex flex-row justify-center align-center my-6">
         <ul className="flex flex-row justify-center align-center text-2xl">
@@ -50,7 +60,7 @@ function Nav() {
           </a>
           <a href="https://www.yahoo.com" className="px-4">
             <SupportAgentIcon className="text-white mr-10 nav-hover" />
-          </a>
+          </a>{" "}
           <a href="https://www.yahoo.com" className="px-4">
             <AttributionIcon className="text-white mr-10 nav-hover" />
           </a>
