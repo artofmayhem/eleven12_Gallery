@@ -172,9 +172,20 @@ input {
   padding: 1rem 0rem;
 }
 
-.decorative-stripe {
+.decorative-stripe-lt {
   border-left: 4px solid orangered;
   border-bottom: 4px solid orangered;
+}
+
+.decorative-stripe-rt {
+  border-right: 4px solid orangered;
+  border-top: 4px solid orangered;
+}
+
+.photo-sizer {
+  width: 50vw;
+  min-width: 375;
+  height: auto;
 }
 
 /* Slider CSS */

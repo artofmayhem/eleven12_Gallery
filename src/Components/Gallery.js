@@ -153,7 +153,7 @@ export default function Gallery() {
           </ul>
         </div>
       </div>{" "}
-      <div className="decorative-stripe pl-48 h-64 px-16 mt-24 flex flex-col justify-center align-center">
+      <div className="decorative-stripe-lt pl-48 h-64 px-16 mt-24 flex flex-col justify-center align-center">
         <h2>
           GREAT COMMUNITIES SHAPE HOW WE LIVE. THE SAME GOES FOR YOUR HOME.
         </h2>
@@ -171,12 +171,19 @@ export default function Gallery() {
             for Anaha in Ward Village, were the obvious choice.
           </h4>
         </div>
-
         <img
           src={ARCHITECTURE_1}
-          className="w-1/2 py-16 my-10"
-          alt="Beautiful, symmetrical bedroom with beautiful bedding"
+          className="pl-16 my-24 photo-sizer"
+          alt="sketch of modern architecture"
         />
+        <div className="decorative-stripe-rt pl-48 h-64 px-16 mt-24 flex flex-col justify-center align-center">
+          <div className="logo-dot-lg self-end">
+            <div className="logo-dot-violet bg-violet-500 self-end" />
+          </div>
+          <h2>
+            Experience the difference of a modern home made for your contemporary lifestyle. 
+          </h2>
+        </div>{" "}
       </div>
     </React.Fragment>
   );
