@@ -1,8 +1,8 @@
 import "./App.css";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // Dashboard component imports
-import { Nav, Header, Form, Gallery } from "./Components";
+import { Nav, Header, Form, Gallery, Photo } from "./Components";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Header />
         <Form />
         <Gallery />
+        <Photo />
       </div>
     </Router>
   );

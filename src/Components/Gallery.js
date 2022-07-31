@@ -154,7 +154,7 @@ export default function Gallery() {
         </div>
       </div>{" "}
       <div className="decorative-stripe-lt pl-48 h-64 px-16 mt-24 flex flex-col justify-center align-center">
-        <h2>
+        <h2 className="pb-10">
           GREAT COMMUNITIES SHAPE HOW WE LIVE. THE SAME GOES FOR YOUR HOME.
         </h2>
       </div>{" "}
@@ -181,10 +181,12 @@ export default function Gallery() {
             <div className="logo-dot-violet bg-violet-500 self-end" />
           </div>
           <h2>
-            Experience the difference of a modern home made for your contemporary lifestyle. 
+            Experience the difference of a modern home made for your
+            contemporary lifestyle.
           </h2>
         </div>{" "}
       </div>
+      <div className="splash-wrapper"></div>
     </React.Fragment>
   );
 }
