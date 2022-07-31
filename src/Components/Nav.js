@@ -30,8 +30,8 @@ function Nav() {
 
 
   return (
-    <div className="Nav-Wrapper bg-violet-800 animate-fade-in-down">
-      <div className="Nav-Content flex justify-between px-10 my-4 flex-row align-center">
+    <div className="Nav-Wrapper flex flex-row flex-wrap bg-violet-800 animate-fade-in-down">
+      <div className="Nav-Content flex flex-row flex-wrap justify-between px-10 my-4 flex-row align-center">
         <div>
           <SearchIcon className="text-white mr-2" />
           <input

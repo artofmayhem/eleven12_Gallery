@@ -158,12 +158,12 @@ export default function Gallery() {
           GREAT COMMUNITIES SHAPE HOW WE LIVE. THE SAME GOES FOR YOUR HOME.
         </h2>
       </div>{" "}
-      <div className="flex flex-row flex-wrap align-center justify-evenly align-center self-center py-16 px-12 mr-24">
-        <div>
+      <div className="flex flex-row flex-wrap align-center justify-evenly align-center self-center py-16 px-12 mr-6">
+        <div className="text-center">
           <div className="logo-dot-lg self-start">
             <div className="logo-dot-violet bg-violet-500 self-start" />
           </div>
-          <h4 className="py-12 mt-32 text-right w-96 self-center">
+          <h4 className="pl-20 mt-32 text-right w-96 self-center">
             The architecture firm was chosen based on their sensitivity to the
             context and uniqueness of the location, artistic expression, and a
             proven track record for designing inspiring buildings. Solomon
@@ -173,7 +173,8 @@ export default function Gallery() {
         </div>
         <img
           src={ARCHITECTURE_1}
-          className="pl-16 my-24 photo-sizer"
+          className="pl-10 my-24 photo-sizer"
+          style={{minWidth: "450px"}}
           alt="sketch of modern architecture"
         />
         <div className="decorative-stripe-rt pl-48 h-64 px-16 mt-24 flex flex-col justify-center align-center">
