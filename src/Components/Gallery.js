@@ -8,6 +8,7 @@ import {
   GALLERY_6,
   ARCHITECTURE_1,
 } from "../assets";
+import {InstantSearch} from "react-instantsearch-dom";
 
 export default function Gallery() {
   return (
@@ -186,8 +187,10 @@ export default function Gallery() {
             contemporary lifestyle.
           </h2>
         </div>{" "}
+      </div>  
+      <div className="splash-wrapper">
+   
       </div>
-      <div className="splash-wrapper"></div>
     </React.Fragment>
   );
 }
