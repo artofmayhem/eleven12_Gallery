@@ -22,12 +22,22 @@ function Nav() {
     console.log("Search value: ", searchValue);
   };
 
+  //Handle Submit
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    console.log("Search value Submitted: ", searchValue);
+  };
+
+  const residentPortalResponse = (event) => {
+    event.preventDefault();
+    console.log("Resident Portal Response: Button Pressed");
+  };
+
   // Handle Dark Mode Switch
   const handleDarkModeSwitch = (event) => {
     setIsDarkMode(event.target.checked);
     console.log("Dark Mode: ", isDarkMode);
-  }
-
+  };
 
   return (
     <div className="Nav-Wrapper flex flex-row flex-wrap bg-violet-800 animate-fade-in-down">
@@ -40,24 +50,32 @@ function Nav() {
             value={searchValue.value}
             onChange={handleSearchChange}
           />
+          <button
+            className="bg-gray-400 w-32 h-10 mx-10 text-xl text-center"
+            onClick={handleSearchSubmit}
+          >
+            Search
+          </button>
         </div>
         <div>
-        <div className="logo-dot-sm self-start" />
+          <div className="logo-dot-sm self-start" />
           <h1 className="text-3xl logo-name-location">ELEVN12</h1>
         </div>
         <div className="flex flex-col justify-end align-center ">
           <div>
-            <button className="py-2 px-6 bg-gray-400 text-xl">
+            <button
+              className="py-2 px-6 bg-gray-400 text-xl"
+              onClick={residentPortalResponse}
+            >
               Resident Portal
             </button>
             <LoginIcon className="text-white ml-6" />
           </div>
           <div className="flex self-end justify-center align-center">
-            <p className='text-xs text-slate-300 mt-3'>Dark Mode</p>
-           <Switch onChange={handleDarkModeSwitch}></Switch>
-           </div>
+            <p className="text-xs text-slate-300 mt-3">Dark Mode</p>
+            <Switch onChange={handleDarkModeSwitch}></Switch>
+          </div>
         </div>
-       
       </div>
       <div className="Nav-Content-Links flex flex-row justify-center align-center my-6">
         <ul className="flex flex-row justify-center align-center text-2xl">
