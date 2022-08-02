@@ -7,12 +7,12 @@ import reportWebVitals from "./reportWebVitals";
 // Redux imports
 import { Provider } from "react-redux";
 import {appReducer} from "./State/ReducerState/index"
-import { configureStore } from "@reduxjs/toolkit";
+import { createStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
 const logger = createLogger({ diff: true });
 
-const store = configureStore({
+const store = createStore({
   reducer: { appReducer },
   middleware: [thunk, logger],
 });
