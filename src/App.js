@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Dashboard component imports
-import { Nav, Header, Form, Gallery, Photo } from "./Components";
+import { Nav, Header, Form, Gallery, Photo, Footer } from "./Components";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Form />
         <Gallery />
         <Photo />
+        <Footer />
       </div>
     </Router>
   );
