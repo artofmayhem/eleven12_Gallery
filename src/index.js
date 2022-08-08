@@ -12,6 +12,7 @@ import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
 const logger = createLogger({ diff: true });
 
+
 const store = createStore({
   reducer: { appReducer },
   middleware: [thunk, logger],
