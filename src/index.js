@@ -7,16 +7,12 @@ import reportWebVitals from "./reportWebVitals";
 // Redux imports
 import { Provider } from "react-redux";
 import {appReducer} from "./State/ReducerState/index"
-import { createStore } from "@reduxjs/toolkit";
+import { createStore, applyMiddleware } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
 const logger = createLogger({ diff: true });
+const store = createStore(appReducer, {}, applyMiddleware(thunk, logger));
 
-
-const store = createStore({
-  reducer: { appReducer },
-  middleware: [thunk, logger],
-});
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
