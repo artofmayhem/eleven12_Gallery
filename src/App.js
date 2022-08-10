@@ -12,8 +12,8 @@ function App() {
         <Header />
         <Form />
         <Gallery />
-        {/* <Photo /> */}
-        {/* <Footer /> */}
+        <Photo />
+        <Footer />
       </div>
     </Router>
   );
